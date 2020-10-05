@@ -30,5 +30,5 @@ override func viewDidLoad() {
    
 }
 ```
-You should now be able to build and run the app. When you do, it will print out Log message: analytics initialized.
+You should now be able to build and run the app. When you do, it will print out Log message: whatsapp initialized.
 
