@@ -10,6 +10,7 @@
 		598D95AA252B827E007AEE5E /* WhatsAppAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598D95A0252B827E007AEE5E /* WhatsAppAPI.framework */; };
 		598D95AF252B827E007AEE5E /* WhatsAppAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D95AE252B827E007AEE5E /* WhatsAppAPITests.swift */; };
 		598D95B1252B827E007AEE5E /* WhatsAppAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D95A3252B827E007AEE5E /* WhatsAppAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		598D95BB252B828A007AEE5E /* WhatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D95BA252B828A007AEE5E /* WhatsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		598D95A9252B827E007AEE5E /* WhatsAppAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsAppAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D95AE252B827E007AEE5E /* WhatsAppAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppAPITests.swift; sourceTree = "<group>"; };
 		598D95B0252B827E007AEE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		598D95BA252B828A007AEE5E /* WhatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				598D95A3252B827E007AEE5E /* WhatsAppAPI.h */,
 				598D95A4252B827E007AEE5E /* Info.plist */,
+				598D95BA252B828A007AEE5E /* WhatsApp.swift */,
 			);
 			path = WhatsAppAPI;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					598D959F252B827E007AEE5E = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					598D95A8252B827E007AEE5E = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598D95BB252B828A007AEE5E /* WhatsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		598D95B5252B827E007AEE5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 83NFHDY43B;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.WhatsAppAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		598D95B6252B827E007AEE5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 83NFHDY43B;
@@ -388,6 +396,7 @@
 		598D95B8252B827E007AEE5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83NFHDY43B;
 				INFOPLIST_FILE = WhatsAppAPITests/Info.plist;
@@ -406,6 +415,7 @@
 		598D95B9252B827E007AEE5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83NFHDY43B;
 				INFOPLIST_FILE = WhatsAppAPITests/Info.plist;
